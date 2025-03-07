@@ -1,5 +1,3 @@
----
-
 Este manual explica como utilizar a API de Supermercado para gerenciar clientes, produtos e ordens de venda. A API foi construída com o framework Flask e utiliza arquivos CSV para persistência de dados. Todas as requisições serão exemplificadas usando o **Postman**, uma ferramenta popular para testar APIs.
 
 **Pré-requisitos**
@@ -12,8 +10,6 @@ Este manual explica como utilizar a API de Supermercado para gerenciar clientes,
     
 2. **Postman Instalado**: Baixe e instale o Postman (disponível em [postman.com](https://www.postman.com/)) para testar as requisições.
 3. **Estrutura de Pastas**: Certifique-se de que a pasta csv/ existe no mesmo diretório do arquivo Python e que os arquivos clientes.csv, produtos.csv e ordem.csv foram criados (eles são gerados automaticamente na primeira execução).
-
----
 
 **Estrutura Geral da API**
 
@@ -32,8 +28,6 @@ Cada entidade suporta as operações **CRUD** (Create, Read, Update, Delete) via
 
 Os dados são enviados e recebidos no formato **JSON**, exceto na leitura (GET), que retorna uma lista de arrays.
 
----
-
 **Como Fazer Requisições no Postman**
 
 **Configurações Básicas no Postman**
@@ -42,8 +36,6 @@ Os dados são enviados e recebidos no formato **JSON**, exceto na leitura (GET),
 2. Escolha o **método HTTP** (GET, POST, PUT, DELETE) no menu suspenso ao lado da URL.
 3. Insira a **URL base**: http://localhost:5000 (ou o IP do servidor, se estiver hospedado remotamente).
 4. Configure os parâmetros conforme necessário (query ou body, explicados abaixo).
-
----
 
 **1. Rotas de Clientes**
 
